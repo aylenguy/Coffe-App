@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f6f1ea;
+  --foreground: #2b211c;
+  --accent-brown: #8b5e3c;
+  --soft-beige: #6f5d52;
+  --border-soft: #dccfc2;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+.font-bryndan {
+  font-family: "Bryndan", cursive;
+}
+
+@font-face {
+  font-family: "Bryndan";
+  src: url("/fonts/bryndan-write-regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #f6f1ea;
+  background-image:
+    radial-gradient(
+      circle at top left,
+      rgba(139, 94, 60, 0.08),
+      transparent 20%
+    ),
+    radial-gradient(
+      circle at bottom right,
+      rgba(43, 33, 28, 0.04),
+      transparent 18%
+    );
+  color: var(--foreground);
+  font-family: var(--font-inter), sans-serif;
+}
