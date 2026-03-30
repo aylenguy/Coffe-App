@@ -36,14 +36,15 @@ export default function CartaPage() {
           </h1>
 
           <p className="mx-auto mb-12 max-w-2xl leading-8 text-[#6f5d52]">
-            Conocé nuestra propuesta de cafetería y pastelería.
+            Descubrí nuestra propuesta de café y pastelería.
           </p>
 
           <button
             type="button"
             onClick={() => setOpen(true)}
-            className="group mx-auto block w-full max-w-3xl overflow-hidden rounded-[28px] border border-[#eee6df] bg-white shadow-[0_16px_50px_rgba(43,33,28,0.05)] transition hover:shadow-[0_22px_60px_rgba(43,33,28,0.08)]"
             aria-label="Abrir carta ampliada"
+            aria-expanded={open}
+            className="group mx-auto block w-full max-w-3xl overflow-hidden rounded-[28px] border border-[#eee6df] bg-white shadow-[0_16px_50px_rgba(43,33,28,0.05)] transition hover:shadow-[0_22px_60px_rgba(43,33,28,0.08)]"
           >
             <div className="relative">
               <Image
@@ -63,12 +64,16 @@ export default function CartaPage() {
               </div>
             </div>
           </button>
+
+          <p className="mt-4 text-sm text-[#8b5e3c]">
+            Tocá la imagen para verla en grande
+          </p>
         </section>
       </main>
 
       {open && (
         <div
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 md:p-8"
+          className="fixed inset-0 z-50 flex items-start justify-center bg-black/80 p-4 pt-6 md:p-8"
           role="dialog"
           aria-modal="true"
           aria-label="Carta ampliada de Ramon Café"
@@ -84,7 +89,7 @@ export default function CartaPage() {
           </button>
 
           <div
-            className="max-h-[92vh] w-full max-w-5xl overflow-auto rounded-[24px] bg-white p-2 md:p-3"
+            className="max-h-[92vh] w-full max-w-5xl overflow-auto rounded-[24px] bg-white p-1 md:p-3"
             onClick={(e) => e.stopPropagation()}
           >
             <Image

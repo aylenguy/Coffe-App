@@ -56,8 +56,8 @@ const infoCards = [
   },
   {
     icon: Coffee,
-    title: "Café de especialidad",
-    text: "Una propuesta cálida, cuidada y bien hecha.",
+    title: "Nuestra propuesta",
+    text: "Café de especialidad, pastelería y un ambiente pensado para disfrutar.",
   },
   {
     icon: MapPin,
@@ -70,17 +70,17 @@ const highlightCards = [
   {
     icon: Coffee,
     title: "Café de especialidad",
-    text: "Sabores cuidados, preparaciones simples y una experiencia pensada para disfrutar.",
+    text: "Preparaciones cuidadas, buenos granos y una experiencia simple para disfrutar todos los días.",
   },
   {
     icon: Croissant,
     title: "Pastelería",
-    text: "Opciones dulces para acompañar cada momento con una propuesta cálida y bien resuelta.",
+    text: "Opciones dulces pensadas para acompañar el café con una propuesta cálida y bien resuelta.",
   },
   {
     icon: Sparkles,
     title: "Ambiente",
-    text: "Un espacio urbano, cómodo y con identidad para hacer una pausa sin apuro.",
+    text: "Un espacio urbano, cómodo y con identidad para trabajar, encontrarse o hacer una pausa.",
   },
 ];
 
@@ -233,8 +233,9 @@ export default function Home() {
             </h1>
 
             <p className="mx-auto mb-10 max-w-2xl text-base leading-8 text-[#6f5d52] md:text-lg">
-              Café de especialidad, pastelería y una propuesta simple para
-              encontrar carta, horarios y ubicación en un solo lugar.
+              Café de especialidad en Rosario. Un espacio pensado para
+              disfrutar, encontrarte con alguien o hacer una pausa en medio del
+              día.
             </p>
 
             <div className="flex flex-wrap justify-center gap-4">
@@ -270,7 +271,7 @@ export default function Home() {
                 muted
                 loop
                 playsInline
-                preload="none"
+                preload="auto"
                 controls={false}
                 controlsList="nodownload nofullscreen noremoteplayback"
                 disablePictureInPicture
@@ -317,7 +318,7 @@ export default function Home() {
             </p>
 
             <h2 className="text-4xl font-light text-[#2b211c] md:text-5xl">
-              Una experiencia simple, cálida y bien resuelta
+              Más que café, un momento para vos
             </h2>
           </motion.div>
 
@@ -371,12 +372,13 @@ export default function Home() {
               </p>
 
               <h2 className="mb-4 text-4xl font-light leading-tight text-[#2b211c]">
-                Un espacio pensado para disfrutar el café sin apuro
+                Un espacio pensado para disfrutar sin apuro
               </h2>
 
               <p className="leading-8 text-[#6f5d52]">
-                Una propuesta donde conviven café de especialidad, pastelería y
-                una estética simple, urbana y cálida.
+                En Ramon conviven café de especialidad, pastelería y una
+                estética urbana y cálida para que cada visita se sienta simple,
+                cómoda y especial.
               </p>
             </motion.div>
 
@@ -449,9 +451,50 @@ export default function Home() {
             viewport={{ once: true }}
             className="mt-10 text-center text-sm text-[#8b5e3c]"
           >
-            ⭐ 4.9 en Google Reviews
+            ⭐ 4.9 en Google · Opiniones verificadas
           </motion.div>
         </div>
+      </section>
+
+      {/* CTA FINAL */}
+      <section className="px-6 pb-24">
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={{ once: true, amount: 0.2 }}
+          className="mx-auto max-w-5xl rounded-[32px] border border-[#eee6df] bg-[#fcfaf8] px-8 py-14 text-center shadow-[0_16px_50px_rgba(43,33,28,0.04)] md:px-12"
+        >
+          <p className="mb-3 text-xs uppercase tracking-[0.35em] text-[#8b5e3c]">
+            Ramon Café
+          </p>
+
+          <h2 className="mx-auto max-w-2xl text-4xl font-light leading-tight text-[#2b211c] md:text-5xl">
+            Te esperamos para disfrutar un buen café en Rosario
+          </h2>
+
+          <p className="mx-auto mt-5 max-w-2xl leading-8 text-[#6f5d52]">
+            Encontrá nuestra carta, ubicación y toda la información necesaria
+            para visitarnos cuando quieras.
+          </p>
+
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <Link
+              href="/carta"
+              className="inline-flex items-center gap-2 rounded-full bg-[#8b5e3c] px-7 py-3 text-sm font-medium text-white transition duration-300 hover:bg-[#6e472d]"
+            >
+              Ver carta
+              <ArrowRight size={16} />
+            </Link>
+
+            <Link
+              href="/contacto"
+              className="inline-flex items-center gap-2 rounded-full border border-[#dfd3c8] px-7 py-3 text-sm font-medium text-[#2b211c] transition duration-300 hover:bg-[#2b211c] hover:text-white"
+            >
+              Ver ubicación
+            </Link>
+          </div>
+        </motion.div>
       </section>
     </main>
   );

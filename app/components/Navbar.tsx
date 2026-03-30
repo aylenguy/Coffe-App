@@ -42,7 +42,7 @@ export default function Navbar() {
           ))}
 
           <a
-            href="https://instagram.com"
+            href="https://www.instagram.com/ramoncafe____/"
             target="_blank"
             rel="noopener noreferrer"
             className="rounded-full bg-[#8b5e3c] px-5 py-2.5 text-sm font-medium text-white transition hover:bg-[#6e472d]"
