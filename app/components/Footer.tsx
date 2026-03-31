@@ -53,7 +53,7 @@ export default function Footer() {
               </Link>
 
               <a
-                href="https://instagram.com"
+                  href="https://www.instagram.com/ramoncafe____/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-[#f6f1ea] transition hover:opacity-70"
