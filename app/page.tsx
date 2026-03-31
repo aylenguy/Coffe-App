@@ -271,7 +271,7 @@ export default function Home() {
                 muted
                 loop
                 playsInline
-                preload="auto"
+                preload="metadata"
                 controls={false}
                 controlsList="nodownload nofullscreen noremoteplayback"
                 disablePictureInPicture
