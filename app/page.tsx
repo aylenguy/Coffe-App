@@ -221,7 +221,7 @@ export default function Home() {
   return (
     <main className="overflow-hidden bg-white text-[#2b211c]">
       {/* HERO */}
-      <section className="px-6 pb-12 pt-24 md:pb-16 md:pt-28">
+      <section className="px-6 pb-12 pt-32 md:pb-16 md:pt-28">
         <div className="mx-auto max-w-6xl text-center">
           <motion.div variants={fadeUp} initial="hidden" animate="show">
             <p className="mb-5 text-[11px] uppercase tracking-[0.38em] text-[#8b5e3c] md:text-xs">
