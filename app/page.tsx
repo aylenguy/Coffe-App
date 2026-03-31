@@ -221,7 +221,7 @@ export default function Home() {
   return (
     <main className="overflow-hidden bg-white text-[#2b211c]">
       {/* HERO */}
-      <section className="px-6 pb-20 pt-24 md:pb-24 md:pt-28">
+      <section className="px-6 pb-12 pt-24 md:pb-16 md:pt-28">
         <div className="mx-auto max-w-6xl text-center">
           <motion.div variants={fadeUp} initial="hidden" animate="show">
             <p className="mb-5 text-[11px] uppercase tracking-[0.38em] text-[#8b5e3c] md:text-xs">
@@ -266,7 +266,7 @@ export default function Home() {
             <div className="w-full max-w-6xl overflow-hidden rounded-[30px] border border-[#eee6df] shadow-[0_20px_60px_rgba(43,33,28,0.06)]">
               <video
                 src="/videos/ramon.mp4"
-                poster="/images/image-2.webp"
+                poster="/images/poster.webp"
                 autoPlay
                 muted
                 loop
@@ -283,25 +283,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* FRANJA INFO */}
-      <section className="px-6 py-10 md:py-12">
-        <motion.div
-          className="mx-auto grid max-w-6xl gap-4 md:grid-cols-3"
-          variants={fadeUp}
-          initial="hidden"
-          whileInView="show"
-          viewport={{ once: true, amount: 0.2 }}
-        >
-          {infoCards.map((item) => (
-            <InfoCard
-              key={item.title}
-              icon={item.icon}
-              title={item.title}
-              text={item.text}
-            />
-          ))}
-        </motion.div>
-      </section>
+      
 
       {/* DESTACADOS */}
       <section className="px-6 py-20 md:py-24">
@@ -455,6 +437,75 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
+
+     {/* UBICACIÓN */}
+<section className="px-6 py-16 md:py-20">
+  <div className="mx-auto max-w-5xl">
+    <motion.div
+      variants={fadeUp}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className="mb-10 text-center"
+    >
+      <p className="mb-3 text-xs uppercase tracking-[0.35em] text-[#8b5e3c]">
+        Ubicación
+      </p>
+
+      <h2 className="text-4xl font-light text-[#2b211c] md:text-5xl">
+        Vení a conocernos
+      </h2>
+
+      <p className="mx-auto mt-4 max-w-xl leading-7 text-[#6f5d52]">
+        Visitá nuestro local y disfrutá la experiencia Ramon en un espacio
+        pensado para vos.
+      </p>
+    </motion.div>
+
+    {/* CARD PRINCIPAL */}
+    <motion.div
+      variants={fadeUp}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true }}
+      className="rounded-[28px] border border-[#eee6df] bg-white p-8 text-center shadow-[0_12px_40px_rgba(43,33,28,0.04)]"
+    >
+      <div className="mb-4 flex justify-center text-[#8b5e3c]">
+        <MapPin size={20} />
+      </div>
+
+      <p className="mb-2 text-sm uppercase tracking-[0.2em] text-[#8b5e3c]">
+        Rosario
+      </p>
+
+      <p className="mb-4 text-lg font-medium text-[#2b211c]">
+        Córdoba 1894
+      </p>
+
+      <div className="mb-6 flex items-center justify-center gap-2 text-sm text-[#6f5d52]">
+        <Clock3 size={16} />
+        <p>Lunes a sábado · 8 a 20 hs</p>
+      </div>
+
+      <div className="flex flex-wrap justify-center gap-4">
+        <a
+          href="https://maps.app.goo.gl/tR7w95HqbmofCn989"
+          target="_blank"
+          className="rounded-full border border-[#dfd3c8] px-6 py-2 text-sm transition hover:bg-[#2b211c] hover:text-white"
+        >
+          Cómo llegar
+        </a>
+
+        <Link
+          href="/contacto"
+          className="rounded-full bg-[#8b5e3c] px-6 py-2 text-sm text-white transition hover:bg-[#6e472d]"
+        >
+          Ver todas las sucursales
+        </Link>
+      </div>
+    </motion.div>
+  </div>
+</section>
 
       {/* CTA FINAL */}
       <section className="px-6 pb-24">

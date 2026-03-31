@@ -47,14 +47,16 @@ export default function CartaPage() {
             className="group mx-auto block w-full max-w-3xl overflow-hidden rounded-[28px] border border-[#eee6df] bg-white shadow-[0_16px_50px_rgba(43,33,28,0.05)] transition hover:shadow-[0_22px_60px_rgba(43,33,28,0.08)]"
           >
             <div className="relative">
-              <Image
-                src="/images/image-6.webp"
-                alt="Carta de Ramon Café"
-                width={1400}
-                height={2000}
-                priority
-                className="h-auto w-full object-contain transition duration-500 group-hover:scale-[1.01]"
-              />
+             <Image
+  src="/images/image-6.webp"
+  alt="Carta de Ramon Café"
+  width={1000}
+  height={1400}
+  priority
+  quality={75}
+  sizes="(max-width: 768px) 100vw, 700px"
+  className="h-auto w-full object-contain transition duration-500 group-hover:scale-[1.01]"
+/>
 
               <div className="pointer-events-none absolute inset-0 bg-black/0 transition group-hover:bg-black/5" />
 
@@ -93,12 +95,15 @@ export default function CartaPage() {
             onClick={(e) => e.stopPropagation()}
           >
             <Image
-              src="/images/image-6.webp"
-              alt="Carta ampliada de Ramon Café"
-              width={1600}
-              height={2200}
-              className="h-auto w-full rounded-[18px] object-contain"
-            />
+  src="/images/image-6.webp"
+  alt="Carta ampliada de Ramon Café"
+  width={1600}
+  height={2200}
+  loading="lazy"
+  quality={85}
+  sizes="100vw"
+  className="h-auto w-full rounded-[18px] object-contain"
+/>
           </div>
         </div>
       )}
