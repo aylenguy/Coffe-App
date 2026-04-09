@@ -28,7 +28,7 @@ export default function CartaPage() {
       <main className="min-h-screen bg-white px-6 pb-20 pt-24 text-[#2b211c] md:pt-28">
         <section className="mx-auto max-w-5xl text-center">
           <p className="mb-3 text-xs uppercase tracking-[0.35em] text-[#8b5e3c]">
-            Ramon Café
+            Lume Café
           </p>
 
           <h1 className="mb-5 text-4xl font-light md:text-5xl">
@@ -48,7 +48,7 @@ export default function CartaPage() {
           >
             <div className="relative">
              <Image
-  src="/images/image-6.webp"
+  src="/images/image-6.jpg"
   alt="Carta de Ramon Café"
   width={1000}
   height={1400}
@@ -95,7 +95,7 @@ export default function CartaPage() {
             onClick={(e) => e.stopPropagation()}
           >
             <Image
-  src="/images/image-6.webp"
+  src="/images/image-6.jpg"
   alt="Carta ampliada de Ramon Café"
   width={1600}
   height={2200}

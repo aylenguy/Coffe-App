@@ -7,7 +7,7 @@ export default function ContactoPage() {
     <main className="min-h-screen bg-white px-6 pb-20 pt-24 text-[#2b211c] md:pt-28">
       <section className="mx-auto max-w-5xl text-center">
         <p className="mb-3 text-xs uppercase tracking-[0.35em] text-[#8b5e3c]">
-          Ramon Café
+          Lume Café
         </p>
 
         <h1 className="mb-5 text-4xl font-light md:text-5xl">Contacto</h1>
@@ -23,7 +23,7 @@ export default function ContactoPage() {
               <p className="text-sm uppercase tracking-[0.2em]">Rosario</p>
             </div>
 
-            <p className="mb-4 text-lg font-medium">Córdoba 1894</p>
+            <p className="mb-4 text-lg font-medium">Alsina 1345</p>
 
             <div className="flex items-start gap-2 text-sm text-[#6f5d52]">
               <Clock size={16} className="mt-1 shrink-0" />
@@ -49,7 +49,7 @@ export default function ContactoPage() {
             </div>
 
             <p className="mb-4 text-lg font-medium">
-              RN 9 Esq. Galindo — Local 5
+              3 de febrero 327
             </p>
 
             <div className="flex items-start gap-2 text-sm text-[#6f5d52]">
@@ -81,13 +81,13 @@ export default function ContactoPage() {
           </p>
 
           <a
-            href="https://www.instagram.com/ramoncafe____/"
+            href="https://www.instagram.com/lumecafe____/"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 rounded-full bg-[#8b5e3c] px-7 py-3 text-sm font-medium text-white transition hover:bg-[#6e472d]"
           >
             <ExternalLink size={16} />
-            @ramoncafe__
+            @lumecafe__
           </a>
         </div>
       </section>

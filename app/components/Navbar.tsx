@@ -37,7 +37,7 @@ export default function Navbar() {
           onClick={closeMenu}
           className="font-[Bryndan,serif] text-3xl tracking-[0.04em] text-[#2b211c]"
         >
-          Ramon
+          Lume
         </Link>
 
         {/* desktop */}

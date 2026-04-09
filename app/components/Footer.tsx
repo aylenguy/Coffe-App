@@ -10,7 +10,7 @@ export default function Footer() {
           {/* Marca */}
           <div className="flex flex-col items-center">
             <h3 className="mb-4 font-[Bryndan,serif] text-3xl tracking-[0.08em]">
-              Ramon
+              Lume 
             </h3>
 
             <p className="max-w-xs text-sm leading-7 text-[#d8cfc7]">
@@ -26,7 +26,7 @@ export default function Footer() {
             </p>
 
             <ul className="space-y-2 text-sm text-[#e7ddd5]">
-              <li>Córdoba 1894, Rosario</li>
+              <li>Alsina 1345, Rosario</li>
               <li>Lunes a sábado · 8 a 20 hs</li>
             </ul>
           </div>
@@ -66,7 +66,7 @@ export default function Footer() {
 
         {/* LINEA FINAL */}
         <div className="mt-12 border-t border-white/10 pt-6 text-center text-xs text-[#a78f7a]">
-          © {new Date().getFullYear()} Ramon Café
+          © {new Date().getFullYear()} Lume Café
         </div>
       </div>
     </footer>

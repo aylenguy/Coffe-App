@@ -94,7 +94,7 @@ const galleryImages = [
   },
   {
     src: "/images/image-5.webp",
-    alt: "Producto servido en Ramon",
+    alt: "Producto servido en Lume Café",
     width: 800,
     height: 800,
     aspect: "aspect-[1/1]",
@@ -108,7 +108,7 @@ const galleryImages = [
   },
   {
     src: "/images/image-4.webp",
-    alt: "Interior del local Ramon",
+    alt: "Interior del local Lume Café",
     width: 800,
     height: 1000,
     aspect: "aspect-[4/5]",
@@ -229,7 +229,7 @@ export default function Home() {
             </p>
 
             <h1 className="mb-6 font-[Bryndan,serif] text-6xl tracking-[0.03em] text-[#2b211c] md:text-8xl">
-              Ramon
+             Lume Café
             </h1>
 
             <p className="mx-auto mb-10 max-w-2xl text-base leading-8 text-[#6f5d52] md:text-lg">
@@ -331,7 +331,7 @@ export default function Home() {
             <div className="relative aspect-[4/5] w-full overflow-hidden">
               <Image
                 src="/images/image-2.webp"
-                alt="Mesa con café servido en Ramon"
+                alt="Mesa con café servido en Lume Café"
                 width={1000}
                 height={1200}
                 sizes="(max-width: 768px) 100vw, 50vw"
@@ -358,7 +358,7 @@ export default function Home() {
               </h2>
 
               <p className="leading-8 text-[#6f5d52]">
-                En Ramon conviven café de especialidad, pastelería y una
+                En Lume conviven café de especialidad, pastelería y una
                 estética urbana y cálida para que cada visita se sienta simple,
                 cómoda y especial.
               </p>
@@ -457,7 +457,7 @@ export default function Home() {
       </h2>
 
       <p className="mx-auto mt-4 max-w-xl leading-7 text-[#6f5d52]">
-        Visitá nuestro local y disfrutá la experiencia Ramon en un espacio
+        Visitá nuestro local y disfrutá la experiencia Lume en un espacio
         pensado para vos.
       </p>
     </motion.div>
@@ -479,7 +479,7 @@ export default function Home() {
       </p>
 
       <p className="mb-4 text-lg font-medium text-[#2b211c]">
-        Córdoba 1894
+        Alsina 1345
       </p>
 
       <div className="mb-6 flex items-center justify-center gap-2 text-sm text-[#6f5d52]">
@@ -517,7 +517,7 @@ export default function Home() {
           className="mx-auto max-w-5xl rounded-[32px] border border-[#eee6df] bg-[#fcfaf8] px-8 py-14 text-center shadow-[0_16px_50px_rgba(43,33,28,0.04)] md:px-12"
         >
           <p className="mb-3 text-xs uppercase tracking-[0.35em] text-[#8b5e3c]">
-            Ramon Café
+            Lume Café
           </p>
 
           <h2 className="mx-auto max-w-2xl text-4xl font-light leading-tight text-[#2b211c] md:text-5xl">
