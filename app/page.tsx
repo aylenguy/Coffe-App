@@ -100,7 +100,7 @@ const galleryImages = [
     aspect: "aspect-[1/1]",
   },
   {
-    src: "/images/image-3.webp",
+    src: "/images/image-3.jpg",
     alt: "Barista preparando café",
     width: 800,
     height: 1000,
@@ -330,7 +330,7 @@ export default function Home() {
           >
             <div className="relative aspect-[4/5] w-full overflow-hidden">
               <Image
-                src="/images/image-2.webp"
+                src="/images/image-2.jpg"
                 alt="Mesa con café servido en Lume Café"
                 width={1000}
                 height={1200}
