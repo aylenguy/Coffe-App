@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ramon Café",
+  title: "Lume Café",
   description: "Café de especialidad y pastelería en Rosario",
 };
 
