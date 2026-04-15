@@ -28,7 +28,7 @@ export default function CartaPage() {
       <main className="min-h-screen bg-white px-6 pb-20 pt-24 text-[#2b211c] md:pt-28">
         <section className="mx-auto max-w-5xl text-center">
           <p className="mb-3 text-xs uppercase tracking-[0.35em] text-[#8b5e3c]">
-            Lume Café
+           ORLAN CAFÉ
           </p>
 
           <h1 className="mb-5 text-4xl font-light md:text-5xl">

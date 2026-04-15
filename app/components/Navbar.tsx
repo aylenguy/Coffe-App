@@ -32,13 +32,14 @@ export default function Navbar() {
   return (
     <header className="fixed left-0 right-0 top-0 z-50 border-b border-[#eee6df]/80 bg-white/88 backdrop-blur-md">
       <div className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4 md:px-6">
-        <Link
-          href="/"
-          onClick={closeMenu}
-          className="font-[Bryndan,serif] text-3xl tracking-[0.04em] text-[#2b211c]"
-        >
-          Lume
-        </Link>
+   <Link
+  href="/"
+  onClick={closeMenu}
+  className="font-['Archivo'] text-lg md:text-xl tracking-[0.08em] text-[#bfa05d] leading-none"
+>
+  ORLAN CAFÉ
+</Link>
+
 
         {/* desktop */}
         <nav className="hidden items-center gap-8 md:flex">
@@ -53,14 +54,15 @@ export default function Navbar() {
           ))}
 
           <a
-            href="https://www.instagram.com/ramoncafe____/"
+            href="https://www.instagram.com/cafeorlan/"
             target="_blank"
             rel="noopener noreferrer"
-            className="rounded-full bg-[#8b5e3c] px-5 py-2.5 text-sm font-medium text-white transition hover:bg-[#6e472d]"
+            className="rounded-full bg-[#bfa05d] px-5 py-2.5 text-sm text-white transition hover:bg-[#a88c4e]"
           >
             Instagram
           </a>
         </nav>
+
 
         {/* mobile button */}
         <button
@@ -94,7 +96,7 @@ export default function Navbar() {
             ))}
 
             <a
-              href="https://www.instagram.com/ramoncafe____/"
+              href="https://www.instagram.com/cafeorlan/"
               target="_blank"
               rel="noopener noreferrer"
               onClick={closeMenu}

@@ -2,18 +2,17 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#5a3a25] text-[#f6f1ea]">
-      {" "}
+    <footer className="bg-[#bfa05d] text-[#f6f1ea]">
       <div className="mx-auto max-w-5xl px-6 py-14">
-        {/* GRID */}
         <div className="grid gap-12 text-center md:grid-cols-3 md:gap-10">
           {/* Marca */}
           <div className="flex flex-col items-center">
-            <h3 className="mb-4 font-[Bryndan,serif] text-3xl tracking-[0.08em]">
-              Lume 
-            </h3>
+          <h3 className="mb-5 font-['Archivo'] text-xl md:text-2xl tracking-[0.12em] text-white">
+  ORLAN CAFÉ
+</h3>
 
-            <p className="max-w-xs text-sm leading-7 text-[#d8cfc7]">
+
+            <p className="max-w-xs text-sm leading-7 text-[#fff8ef]">
               Café de especialidad y pastelería en Rosario. Un espacio pensado
               para disfrutar sin apuro.
             </p>
@@ -21,19 +20,19 @@ export default function Footer() {
 
           {/* Info */}
           <div className="flex flex-col items-center">
-            <p className="mb-4 text-xs uppercase tracking-[0.35em] text-[#a78f7a]">
+            <p className="mb-4 text-xs uppercase tracking-[0.35em] text-[#f3e6cf]">
               Información
             </p>
 
-            <ul className="space-y-2 text-sm text-[#e7ddd5]">
-              <li>Alsina 1345, Rosario</li>
-              <li>Lunes a sábado · 8 a 20 hs</li>
+            <ul className="space-y-2 text-sm text-[#fff8ef]">
+              <li>Salta 1861, Rosario</li>
+              <li>Lunes a domingo · 8 a 20 hs</li>
             </ul>
           </div>
 
           {/* Navegación */}
           <div className="flex flex-col items-center">
-            <p className="mb-4 text-xs uppercase tracking-[0.35em] text-[#a78f7a]">
+            <p className="mb-4 text-xs uppercase tracking-[0.35em] text-[#f3e6cf]">
               Navegación
             </p>
 
@@ -53,7 +52,7 @@ export default function Footer() {
               </Link>
 
               <a
-                  href="https://www.instagram.com/ramoncafe____/"
+                href="https://www.instagram.com/cafeorlan/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-sm text-[#f6f1ea] transition hover:opacity-70"
@@ -64,9 +63,8 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* LINEA FINAL */}
-        <div className="mt-12 border-t border-white/10 pt-6 text-center text-xs text-[#a78f7a]">
-          © {new Date().getFullYear()} Lume Café
+        <div className="mt-12 border-t border-white/20 pt-6 text-center text-xs text-[#fff3df]">
+          © {new Date().getFullYear()} Café Orlan
         </div>
       </div>
     </footer>
