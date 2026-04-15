@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lume Café",
+  title: "Orlan Café",
   description: "Café de especialidad y pastelería en Rosario",
 };
 
